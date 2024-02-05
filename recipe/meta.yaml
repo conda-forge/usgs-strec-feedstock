@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python <=3.11
+    - python >=3.8
     - setuptools >=61.0
     - wheel
     - setuptools-scm >=3.4
@@ -27,7 +27,7 @@ requirements:
     - numpy
     - pip
   run:
-    - python <=3.11
+    - python >=3.8
     - configobj >=5.0.6
     - esi-utils-rupture
     - geopy >=2.2.0

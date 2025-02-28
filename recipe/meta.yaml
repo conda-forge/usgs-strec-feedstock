@@ -1,6 +1,6 @@
 {% set python_min = "3.9" %}
 {% set name = "usgs-strec" %}
-{% set version = "2.3.8.1" %}
+{% set version = "2.3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/usgs_strec-{{ version }}.tar.gz
-  sha256: dd098fdfcb8f0cf74b7759626ff6f6455b78539c799a21c166d64a2bf7663a7b
+  sha256: c63fd11cd9f06d2be7e505155e9522b5af73ff56038982a221ab303aebdf8676
 
 build:
   entry_points:

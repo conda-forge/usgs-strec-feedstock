@@ -1,6 +1,6 @@
 {% set python_min = "3.9" %}
 {% set name = "usgs-strec" %}
-{% set version = "2.3.13" %}
+{% set version = "2.3.14" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/usgs_strec-{{ version }}.tar.gz
-  sha256: 78733b30526deb46071c09d252cdaeec37560d1cece1055efa8777d21956fa93
+  sha256: f1412a8b46ea56bfd111cefdfff1b3bb0d6136153bba445c9fe4a60bb9acc3a4
 
 build:
   entry_points:
@@ -28,6 +28,8 @@ requirements:
     - numpy
     - pip
   run:
+    - python-dotenv
+    - setuptools <82
     - geopandas
     - python >={{ python_min }}
     - configobj >=5.0.6
